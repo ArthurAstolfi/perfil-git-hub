@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+      font-size: 1em;
+  }
+  
+  html, body {
+      height: 100%;
+  }
+  
+  header { grid-area: header; }
+  nav { grid-area: nav; }
+  main { grid-area: main; }
+  footer { grid-area: footer; }
+  
+  .container-fluid {
+      width: 100%;
+      min-height: 100vh;
+      display: grid;
+      grid: "nav" auto 
+          "header" auto 
+          "main" 1fr 
+          "footer" auto / 1fr;
+  }
+  
+  .container-fluid > * {
+      width: 100%;
+      padding: 10px;
+      background-color: #FFF;
+  
+  }
+  .nav{
+      display: flex;
+  
+  }
+  .nav,ul{
+      display: flex;
+      justify-content: space-between;
+  }
+  .nav li{
+      list-style: none;
+      margin-left: 10px;
+  }
+  nav > span{
+      margin-left: 10px;
+  }
+  nav ul li a:hover{
+      background-color: rgb(172, 172, 255);
+  }
+  nav a{
+      text-decoration: none;
+      color: black;
+      padding: 3px;
+      border-radius: 8px;
+  }
+  
+  nav span a:hover{
+      background-color: rgb(172, 172, 255);
+  }
+  .imagem{
+      display: flex;
+      
+  }
+  .texto{
+    margin-left: 10px;
+  }
+
+  .icone{
+    margin:10px;
+    
+  }
+
+  .icone_2{
+    margin:35px;
+  }
+
+  .card{
+    margin-top: 15px;
+  }
+
+
+  
+  
+  @media all and (min-width: 758px) {
+  
+      .container-fluid {
+  
+          grid: "nav nav" auto
+                "header header" auto
+                "main main" 1fr
+                "footer footer" auto / 2fr 10fr;
+  
+      }
+  
+  }
