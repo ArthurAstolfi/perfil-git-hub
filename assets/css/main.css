@@ -28,67 +28,77 @@
           "footer" auto / 1fr;
   }
   
-  .container-fluid > * {
+  .container-fluid> * {
       width: 100%;
       padding: 10px;
       background-color: #FFF;
+  }
   
-  }
-  .nav{
-      display: flex;
   
+.nav{
+    display: flex; 
+}
+
+nav,ul {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding:6px;
+}
+  
+  span {
+      background-color: silver;
+      padding: 6px;
+      border-radius: 5px;
   }
-  .nav,ul{
+  
+  .imagem h3 {
+      color:gray;
+  }
+  .imagem {
       display: flex;
-      justify-content: space-between;
   }
-  .nav li{
-      list-style: none;
+  
+  .texto {
       margin-left: 10px;
   }
-  nav > span{
+  .twiter {
       margin-left: 10px;
   }
-  nav ul li a:hover{
-      background-color: rgb(172, 172, 255);
+  .icone {
+      margin-left: 10px;
   }
-  nav a{
-      text-decoration: none;
-      color: black;
-      padding: 3px;
-      border-radius: 8px;
+  .user {
+      margin-left: 90px;
   }
   
-  nav span a:hover{
-      background-color: rgb(172, 172, 255);
+  .card {
+      margin-top: 15px;
   }
-  .imagem{
-      display: flex;
-      
+  .Colegas {
+      margin-top: 40px;
   }
-  .texto{
-    margin-left: 10px;
-  }
-
-  .icone{
-    margin:10px;
-    
-  }
-
-  .icone_2{
-    margin:35px;
-  }
-
-  .card{
-    margin-top: 15px;
-  }
-
-
+  .Colegas .card {
+      margin-top: 15px;
+  } 
   
   
   @media all and (min-width: 758px) {
   
-      .container-fluid {
+      .container-fluid{
   
           grid: "nav nav" auto
                 "header header" auto
@@ -96,5 +106,52 @@
                 "footer footer" auto / 2fr 10fr;
   
       }
-  
+      span a {
+          font-size: 250%;
+      }
+      span {
+          background-color: silver;
+          padding: 8px;
+          border-radius: 6px;
+      }
+      nav li {
+          font-size: 200%;
+          margin-left:10px ;
+      }
+      nav ul li a:hover {
+          background-color: lightblue;
+          border-radius: 6px;
+          padding:8px;
+      }
+      .imagem p {
+          font-size: 120%;
+      }
+
+      .repositorio {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(min(10rem, 100%), 1fr));
+    }
+
+     .carrossel{
+        margin-top: 10px;
+     }
+
+     .carrossel img{
+        height: 500px;
+     }
+
+     .colegas{
+        margin-top: 10px;
+     }
+     
+      .colegas img{
+        height: 100px;
+        width: 200px;
+      }
+      .posiçao{
+        display: flex;
+        justify-content: space-around;
+      }
+
+
   }

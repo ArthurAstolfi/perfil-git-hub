@@ -1,0 +1,19 @@
+main span {
+    border-radius: 8px;
+    background-color:#0059ff;
+    color: black;
+}
+
+main a {
+    text-decoration: none;
+}
+main span{
+   margin:6px;
+}
+
+main p {
+    font-size: 130%;
+}
+span{
+    font-size: 130% ;
+}
